@@ -20,6 +20,7 @@ a {
 #site-header {
   position: sticky;
   top: 0;
+  z-index: 1000;
   padding: 14px 32px;
   background-color: #0b2a4a;
   color: #ffffff;
@@ -45,7 +46,7 @@ a {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 24px 32px;
 }
