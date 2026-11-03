@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Search Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <div id="site-header">
+    <span class="brand">Job Search Hub</span>
+    <nav>
+      <a href="#steps">Steps</a>
+      <a href="#video">Video</a>
+      <a href="#map">Job Map</a>
+      <a href="index.html">&larr; My Resume</a>
+    </nav>
+  </div>
+
+  <div id="hero">
+    <div class="hero-text">
+      <h1>Find the right job, in the right place.</h1>
+      <p>A simple guide to running a focused job search, plus an interactive map of where the openings are.</p>
+    </div>
+    <img src="img/job-search.svg" alt="Magnifying glass over a map pin and a briefcase">
+  </div>
+
+  <main>
+    <div class="two-col">
+      <section id="steps" class="card">
+        <h2>My job search plan</h2>
+        <ol>
+          <li>Get ready
+            <ul>
+              <li>Update your resume and LinkedIn profile</li>
+              <li>List target job titles and must-have skills</li>
+              <li>Decide on location and remote preferences</li>
+            </ul>
+          </li>
+          <li>Find openings
+            <ul>
+              <li>Search job boards and company career pages</li>
+              <li>Set up saved searches and email alerts</li>
+              <li>Check the job map below for hot spots</li>
+            </ul>
+          </li>
+          <li>Apply
+            <ul>
+              <li>Tailor your resume to each posting</li>
+              <li>Write a short, specific cover note</li>
+              <li>Track every application in a spreadsheet</li>
+            </ul>
+          </li>
+          <li>Interview and follow up
+            <ul>
+              <li>Practice with mock interviews</li>
+              <li>Prepare questions for the employer</li>
+              <li>Send a thank-you within 24 hours</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <aside id="tips" class="card">
+        <h2>Quick tips</h2>
+        <p><strong>5&ndash;10</strong> focused applications a week beat 50 rushed ones.</p>
+        <p><strong>24 hrs</strong> is the sweet spot for a thank-you note.</p>
+        <p><strong>1</strong> tracking spreadsheet keeps it all organized.</p>
+      </aside>
+    </div>
+
+    <section id="video" class="card" style="margin-top:32px;">
+      <h2>Watch: job search advice</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RJJb45JsKkA?si=wCHyH231fQwRrjtl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="map" class="card">
+      <h2>Job postings by state</h2>
+      <p>Click a state and use the filters to explore openings by job type or title.</p>
+      <div class="tableau-wrap">
+        <!-- TODO: on Tableau Public open a viz, click Share > Embed code, and paste
+             that block here in place of this one. -->
+        <div class='tableauPlaceholder' id='vizJobMap' style='position: relative'>
+          <noscript><p>Please enable JavaScript to see the interactive map.</p></noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='REPLACE_WITH_WORKBOOK/SHEET' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+          </object>
+        </div>
+        <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('vizJobMap');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width = '100%';
+          vizElement.style.height = '650px';
+        </script>
+      </div>
+      <p class="note">Data source: replace with the name of the viz author and the data source.</p>
+    </section>
+  </main>
+
+  <div id="site-footer">
+    <a href="#top">&uarr; Back to top</a> &middot;
+    <a href="index.html">Back to my resume</a>
+  </div>
+
+</body>
+</html>
