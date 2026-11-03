@@ -45,7 +45,7 @@ a {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px 32px;
 }
@@ -74,6 +74,10 @@ main {
 
 #tips h2 {
   color: #ffffff;
+}
+
+#map .tableau-wrap {
+  overflow-x: auto;
 }
 
 #video iframe {
